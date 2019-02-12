@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using WebMVC.Models;
+using WebMVC.Models.ViewModels;
 
 namespace WebMVC.Controllers
 {
@@ -17,7 +13,7 @@ namespace WebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Your application description page.";            
 
             return View();
         }
