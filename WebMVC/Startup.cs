@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using WebMVC.Models;
 using WebMVC.Data;
+using WebMVC.Services;
 
 namespace WebMVC
 {
@@ -42,6 +43,7 @@ namespace WebMVC
                         builder.MigrationsAssembly("WebMVC")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
