@@ -46,7 +46,7 @@ namespace WebMVC.Data
             // POPULANDO TABELA DEPARTAMENTOS
             _context.Departments.AddRange(d1, d2, d3);
 
-            // POPULANDO TABELA FUNCIONARIOS
+            // POPULANDO TABELA VENDEDORES
             _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
 
             // POPULANDO TABELA VENDAS
