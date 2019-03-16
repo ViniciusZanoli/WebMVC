@@ -14,6 +14,7 @@ namespace WebMVC.Models
         public DateTime BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Departments Departments { get; set; }
+        public int DepartmentsId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
         public Seller()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using WebMVC.Services;
 
 namespace WebMVC.Models
 {
@@ -28,6 +29,11 @@ namespace WebMVC.Models
         public double TotalSales(DateTime initial, DateTime final)
         {
             return Sellers.Sum(seller => seller.TotalSales(initial, final));
+        }
+
+        public static implicit operator Departments(DepatmentsService v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
